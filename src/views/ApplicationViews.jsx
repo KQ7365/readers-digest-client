@@ -4,6 +4,7 @@ import { Authorized } from "../components/Authorized";
 import Home from "../components/Home";
 import { Login } from "../components/Login";
 import { useState } from "react";
+import { BookDetails } from "../components/BookDetails";
 
 export const ApplicationViews = () => {
   const [bookState, setBookState] = useState([]);
@@ -40,6 +41,9 @@ export const ApplicationViews = () => {
             />
           }
         />
+      </Route>
+      <Route path="book">
+        <Route path=":bookId" element={<BookDetails />} />
       </Route>
     </Routes>
   );

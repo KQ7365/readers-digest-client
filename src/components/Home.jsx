@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
 import "./Home.css";
+import { useNavigate } from "react-router-dom";
 
 function Home({ books, fetchBooks, showAll }) {
+  const navigate = useNavigate();
   const [count, setCount] = useState(0);
   useEffect(() => {
     fetchBooks(showAll);
@@ -27,6 +29,9 @@ function Home({ books, fetchBooks, showAll }) {
               className="w-64 h-75 object-cover bg-origin-padding m-3"
               src={book.cover_image_url}
               alt="Image of book"
+              onClick={() => {
+                navigate(`/book/${book.id}`);
+              }}
             />
             {book.categories.flatMap((category) => (
               <li key={category.id}>
