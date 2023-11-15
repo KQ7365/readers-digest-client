@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { getBookById } from "../services/getBookById";
 
 export const BookDetails = () => {
-  const [book, setBook] = useState({});
+  const [book, setBook] = useState({ book_review: [] });
 
   const { bookId } = useParams();
 
@@ -22,6 +22,11 @@ export const BookDetails = () => {
           src={book.cover_image_url}
           alt="Image of book"
         />
+        <h2>
+          {book.book_review.map((review) => (
+            <li key={review.id}>{review.comment}</li>
+          ))}
+        </h2>
       </div>
     </div>
   );
