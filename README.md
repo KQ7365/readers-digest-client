@@ -1,9 +1,24 @@
-# React + Vite
+# readers-digest-client // React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the React/Client Side for a Full-Stack side project I began called Readers Digest! This web application allows users to manage books and reviews through a RESTful API.
 
-Currently, two official plugins are available:
+Be sure to checkout the Django API @ https://github.com/KQ7365/readers-digest
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# readers-digest-client
+This project is CURRENTLY under construction as of 19NOV. Refactoring, adding styling, further CRUD functionality, and stretch goals to be implemented.
+
+## Features
+
+- **User:** Users are authenticated by a unique token/ID.
+- **Book Management:** Users can add and view individual books.
+- **Review System:** Users can write and view reviews for each book.
+
+## Technologies Used
+
+-React/Vite
+-Fetch API (for API requests)
+-React Router (for routing)
+-Tailwind and CSS
+
+## Setup Instructions
+
+Please take the time to check out my code progress until project is complete!
